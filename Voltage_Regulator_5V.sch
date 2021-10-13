@@ -1,0 +1,239 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "+5V Voltage Regulator"
+Date "2021-10-10"
+Rev "1"
+Comp "MAAL's LAB"
+Comment1 "Designer: Mohammad Ahmad ALhamad"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM1117-5.0 U?
+U 1 1 61679494
+P 5150 4000
+AR Path="/61679494" Ref="U?"  Part="1" 
+AR Path="/6167065A/61679494" Ref="U2"  Part="1" 
+F 0 "U2" H 5000 4150 50  0000 C CNN
+F 1 "LM1117-5.0" H 5400 3750 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5150 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 5150 4000 50  0001 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6167949A
+P 5650 3850
+AR Path="/6167949A" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/6167949A" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 5650 3700 50  0001 C CNN
+F 1 "+5V" H 5665 4023 50  0000 C CNN
+F 2 "" H 5650 3850 50  0001 C CNN
+F 3 "" H 5650 3850 50  0001 C CNN
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616794A0
+P 5150 4400
+AR Path="/616794A0" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/616794A0" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 5150 4150 50  0001 C CNN
+F 1 "GND" H 5155 4227 50  0000 C CNN
+F 2 "" H 5150 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDC #PWR?
+U 1 1 616794A6
+P 4650 3850
+AR Path="/616794A6" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/616794A6" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 4650 3750 50  0001 C CNN
+F 1 "VDC" H 4665 4023 50  0000 C CNN
+F 2 "" H 4650 3850 50  0001 C CNN
+F 3 "" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4000 4800 4000
+Wire Wire Line
+	4650 4000 4650 3850
+$Comp
+L Device:R R?
+U 1 1 616794B4
+P 6000 4000
+AR Path="/616794B4" Ref="R?"  Part="1" 
+AR Path="/6167065A/616794B4" Ref="R3"  Part="1" 
+F 0 "R3" V 5900 4000 50  0000 C CNN
+F 1 "1k" V 6000 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5930 4000 50  0001 C CNN
+F 3 "~" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 616794BA
+P 6150 4150
+AR Path="/616794BA" Ref="D?"  Part="1" 
+AR Path="/6167065A/616794BA" Ref="D4"  Part="1" 
+F 0 "D4" H 6143 3895 50  0000 C CNN
+F 1 "Green" H 6143 3986 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 6150 4150 50  0001 C CNN
+F 3 "~" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616794C0
+P 5650 4400
+AR Path="/616794C0" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/616794C0" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5655 4227 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616794C6
+P 6150 4400
+AR Path="/616794C6" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/616794C6" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 6150 4150 50  0001 C CNN
+F 1 "GND" H 6155 4227 50  0000 C CNN
+F 2 "" H 6150 4400 50  0001 C CNN
+F 3 "" H 6150 4400 50  0001 C CNN
+	1    6150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4000 5650 4000
+Connection ~ 5650 4000
+Wire Wire Line
+	5650 4000 5500 4000
+Wire Wire Line
+	5650 3850 5650 4000
+$Comp
+L Connector:Barrel_Jack_Switch J3
+U 1 1 6181EB22
+P 3700 4100
+F 0 "J3" H 3757 4417 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 3757 4326 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 3750 4060 50  0001 C CNN
+F 3 "~" H 3750 4060 50  0001 C CNN
+F 4 "https://octopart.com/694108301002-w%C3%BCrth+elektronik-52676102?r=sp#PriceAndStock" H 3700 4100 50  0001 C CNN "Resource"
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61820FD5
+P 4450 4400
+AR Path="/61820FD5" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/61820FD5" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4450 4150 50  0001 C CNN
+F 1 "GND" H 4455 4227 50  0000 C CNN
+F 2 "" H 4450 4400 50  0001 C CNN
+F 3 "" H 4450 4400 50  0001 C CNN
+	1    4450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618212B4
+P 4100 4400
+AR Path="/618212B4" Ref="#PWR?"  Part="1" 
+AR Path="/6167065A/618212B4" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 4100 4150 50  0001 C CNN
+F 1 "GND" H 4105 4227 50  0000 C CNN
+F 2 "" H 4100 4400 50  0001 C CNN
+F 3 "" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 4000
+Wire Wire Line
+	4000 4100 4100 4100
+Wire Wire Line
+	4100 4100 4100 4200
+Wire Wire Line
+	4000 4200 4100 4200
+Connection ~ 4100 4200
+Wire Wire Line
+	4100 4200 4100 4400
+Wire Wire Line
+	4450 4300 4450 4400
+Wire Wire Line
+	5150 4300 5150 4400
+Wire Wire Line
+	5650 4300 5650 4400
+Wire Wire Line
+	6150 4300 6150 4400
+$Comp
+L Diode:1N4007 D6
+U 1 1 616483C2
+P 5150 3700
+F 0 "D6" H 5150 3917 50  0000 C CNN
+F 1 "1N4007" H 5150 3826 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5150 3525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5150 3700 50  0001 C CNN
+	1    5150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 4000
+Connection ~ 5500 4000
+Wire Wire Line
+	5500 4000 5450 4000
+Wire Wire Line
+	5000 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 4000
+Connection ~ 4800 4000
+Wire Wire Line
+	4800 4000 4650 4000
+$Comp
+L Device:CP C5
+U 1 1 6164A5D9
+P 4450 4150
+F 0 "C5" H 4568 4196 50  0000 L CNN
+F 1 "10uF" H 4568 4105 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 4488 4000 50  0001 C CNN
+F 3 "~" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4000 4450 4000
+Wire Wire Line
+	4450 4000 4650 4000
+Connection ~ 4450 4000
+$Comp
+L Device:CP C6
+U 1 1 6164B0F5
+P 5650 4150
+F 0 "C6" H 5768 4196 50  0000 L CNN
+F 1 "10uF" H 5768 4105 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I_Pad1.58x1.35mm_HandSolder" H 5688 4000 50  0001 C CNN
+F 3 "~" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
